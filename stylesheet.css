@@ -1,0 +1,86 @@
+@font-face {
+    font-family: "Myfont";
+    src: url(FiraCode.ttf);
+}
+
+body {
+    background-color: #282828;
+    font-family: Myfont;
+    text-align: center;
+    scrollbar-color: #63686e #3c4050;
+}
+
+.clock {
+    margin-top: 270px;
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+
+.cp_iptxt input[type='text'] {
+    font: 15px/24px sans-serif;
+    box-sizing: border-box;
+    height: 50px;
+    width: 30%;
+    padding: 0.3em;
+    transition: 0.3s;
+    letter-spacing: 1px;
+    color: #fff;
+    border: 1px solid #fbf1c7;
+    border-radius: 4px;
+    background-color: #3c3836;
+}
+
+
+.sites {
+    display: inline-block;
+}
+
+.box {
+    position: relative;
+    margin: 1em;
+    padding: 1em 1em;
+    border: solid 1px #fbf1c7;
+    border-radius: 4px;
+    height: 110px;
+    display: inline-block;
+    width: 150px;
+    background-color: #3c3836;
+}
+
+.box .box-title {
+    position: absolute;
+    display: inline-block;
+    top: 6px;
+    left: 8px;
+    padding: 0 9px;
+    line-height: 1;
+    font-size: 19px;
+    background: transparent;
+    color: #fff;
+    font-weight: 500;
+}
+
+.box p {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 8px;
+}
+
+a:visited {
+    color: #B2B2B2;
+}
+
+a {
+    text-decoration: none;
+    color: #B2B2B2;
+}
+
+.list {
+    margin-top: 15px;
+    overflow-y: scroll;
+    height: 100px;
+    background-color: #3c3836;
+    text-align: left;
+}
