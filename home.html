@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>home</title>
+
+</head>
+
+<body onload="start();">
+  <link rel="stylesheet" href="stylesheet.css">
+  <script>
+    function updateClock() {
+      var now = new Date();
+      var hour = now.getHours();
+      var minute = now.getMinutes();
+      var second = now.getSeconds();
+      if (hour < 10) hour = "0" + hour;
+      if (minute < 10) minute = "0" + minute;
+      if (second < 10) second = "0" + second;
+      document.getElementById('myClock').innerHTML = hour + ":" + minute + ":" + second;
+    }
+    function start() {
+      setInterval("updateClock();", 1000);
+      updateClock();
+    }
+  </script>
+  <div class="clock">
+    <div id="myClock" style="color:#FFFFFF;"></div>
+  </div>
+  <div class="cp_iptxt">
+    <label class="ef">
+      <form method="get" action="http://www.google.co.jp/search">
+        <input type="text" name="q" size="31" maxlength="255" value="">
+        <input type="hidden" name="hl" value="ja">
+      </form>
+    </label>
+  </div>
+  <div class="sites">
+    <div class="box">
+      <span class="box-title">Work</span>
+      <div class="list">
+        <p><a href="https://github.com/">Github</a></p>
+        <p><a href="https://gitlab.com/explore">GitLab</a></p>
+        <p><a href="https://drive.google.com/drive/u/0/my-drive">Drive</a></p>
+        <p><a href="https://mail.google.com/mail/u/1/#inbox">Gmail</a></p>
+      </div>
+    </div>
+    <div class="box">
+      <span class="box-title">Media</span>
+      <div class="list">
+        <p><a href="https://youtube.com/">YouTube</a></p>
+        <p><a href="https://9anime.se/">9anime</a></p>
+        <p><a href="https://ja.wikipedia.org/">Wikipedia</a></p>
+        <p><a href="https://www.southparkstudios.com/seasons/south-park">South Park</a></p>
+        <p><a href="https://hackforums.net/">Hack Forums</a></p>
+        <p><a href="https://www.crunchyroll.com/">Crunchyroll</a></p>
+      </div>
+    </div>
+    <div class="box">
+      <span class="box-title">Reddit</span>
+      <div class="list">
+        <p><a href="https://www.reddit.com/r/unixporn/">/r/unixporn/</a></p>
+        <p><a href="https://www.reddit.com/r/linuxmemes/">/r/linuxmemes</a></p>
+        <p><a href="https://www.reddit.com/r/programming/">/r/programming</a></p>
+        <p><a href="https://www.reddit.com/r/hacking/">/r/hacking</a></p>
+      </div>
+    </div>
+    <div class="box">
+      <span class="box-title">Social</span>
+      <div class="list">
+        <p><a href="https://twitter.com/?lang=ja">Twitter</a></p>
+        <p><a href="https://www.instagram.com/?hl=ja">Instagram</a></p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
